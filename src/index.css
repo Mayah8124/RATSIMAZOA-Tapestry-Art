@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+:root {
+    --random-text-color: #89023E;
+    --title-primary-color: #CDB4DB;
+    --title-secondary-color: #E15A97;
+    --bg-color: #FF8FAB;
+    --white-text-color: #FFE5EC;
+    --initial-navbar-color: #FFC2D1;
+    --scrolled-navbar-color: #FFE5EC;
+    --slide-show-bg-color: #FFC8DD;
+}
