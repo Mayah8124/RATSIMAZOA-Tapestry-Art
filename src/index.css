@@ -1,12 +1,47 @@
 @import "tailwindcss";
-
+/* Variables CSS */
 :root {
-    --random-text-color: #89023E;
-    --title-primary-color: #CDB4DB;
-    --title-secondary-color: #E15A97;
-    --bg-color: #FF8FAB;
-    --white-text-color: #FFE5EC;
-    --initial-navbar-color: #FFC2D1;
-    --scrolled-navbar-color: #FFE5EC;
-    --slide-show-bg-color: #FFC8DD;
+  --random-text-color: #89023E;
+  --title-primary-color: #CDB4DB;
+  --title-secondary-color: #E15A97;
+  --bg-color: #FF8FAB;
+  --white-text-color: #fff5f8;
+  --initial-navbar-color: #FFC2D1;
+  --scrolled-navbar-color: #FFE5EC;
+  --slide-show-bg-color: #FFC8DD;
+}
+
+/* Backgrounds */
+.bg-initial {
+  background-color: var(--bg-color);
+}
+
+.bg-slide-show {
+  background-color: var(--slide-show-bg-color);
+}
+
+/* Textes */
+.text-random {
+  color: var(--random-text-color);
+}
+
+.text-title-primary {
+  color: var(--title-primary-color);
+}
+
+.text-title-secondary {
+  color: var(--title-secondary-color);
+}
+
+.text-white-var {
+  color: var(--white-text-color);
+}
+
+/* Navbar */
+.bg-navbar-initial {
+  background-color: var(--initial-navbar-color);
+}
+
+.bg-navbar-scrolled {
+  background-color: var(--scrolled-navbar-color);
 }
