@@ -1,14 +1,14 @@
 @import "tailwindcss";
 /* Variables CSS */
 :root {
-  --random-text-color: #CDB4DB;
+  --random-text-color: #9e0059;
   --title-primary-color: #89023E;
   --title-secondary-color: #E15A97;
   --bg-color: #FF8FAB;
+  --bg-secondary-color: #FFC8DD;
   --white-text-color: #fff5f8;
   --initial-navbar-color: #FFC2D1;
   --scrolled-navbar-color: #FFE5EC;
-  --slide-show-bg-color: #FFC8DD;
 }
 
 /* Backgrounds */
@@ -16,8 +16,8 @@
   background-color: var(--bg-color);
 }
 
-.bg-slide-show {
-  background-color: var(--slide-show-bg-color);
+.bg-second-color {
+  background-color: var(--bg-secondary-color);
 }
 
 /* Textes */
