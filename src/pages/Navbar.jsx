@@ -22,7 +22,7 @@ export default function Navbar() {
   }, [location]);
 
     return ( 
-    <div className='flex flex-2 flex-row gap-3 items-center px-4 fixed top-0 z-0'>    
+    <div className='flex flex-2 flex-row gap-3 items-center px-4 fixed top-0 z-10'>    
         <img src={logo} alt="Tapestry Logo" className="h-[10vh] w-auto" />
         <nav className="bg-navbar-initial w-[85vw] py-3 px-7 rounded-2xl flex flew-row justify-around gap-4 items-center text-white-var font-serif text-ml">
             <Link to="/Home" >Home</Link> 

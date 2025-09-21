@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import { Router , Route } from 'react-router-dom'
+import { Routes , Route } from 'react-router-dom'
 
 import Navbar from './pages/Navbar'
+import Home from './pages/Home.jsx'
 
 function App() {
   return (
     <div className='bg-initial'>
       <Navbar />
+      <Home />
     </div>
   )
 }

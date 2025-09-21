@@ -1,8 +1,8 @@
 @import "tailwindcss";
 /* Variables CSS */
 :root {
-  --random-text-color: #89023E;
-  --title-primary-color: #CDB4DB;
+  --random-text-color: #CDB4DB;
+  --title-primary-color: #89023E;
   --title-secondary-color: #E15A97;
   --bg-color: #FF8FAB;
   --white-text-color: #fff5f8;
