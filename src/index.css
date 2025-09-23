@@ -22,6 +22,14 @@
   background-color: var(--bg-secondary-color);
 }
 
+.bg-third-color {
+  background-color: var(--bg-third-color);
+}
+
+.bg-fourth-color {
+  background-color: var(--bg-fourth-color);
+}
+
 /* Textes */
 .text-random {
   color: var(--random-text-color);
