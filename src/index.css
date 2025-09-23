@@ -4,11 +4,13 @@
   --random-text-color: #9e0059;
   --title-primary-color: #89023E;
   --title-secondary-color: #E15A97;
+  --white-text-color: #fff5f8;
   --bg-color: #FF8FAB;
   --bg-secondary-color: #FFC8DD;
-  --white-text-color: #fff5f8;
+  --bg-third-color: #ff99b3;
+  --bg-fourth-color: #FFE5EC;
   --initial-navbar-color: #FFC2D1;
-  --scrolled-navbar-color: #FFE5EC;
+  
 }
 
 /* Backgrounds */
@@ -42,6 +44,3 @@
   background-color: var(--initial-navbar-color);
 }
 
-.bg-navbar-scrolled {
-  background-color: var(--scrolled-navbar-color);
-}
