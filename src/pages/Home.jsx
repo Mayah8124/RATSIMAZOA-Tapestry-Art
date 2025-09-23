@@ -8,7 +8,7 @@ export default function Home() {
                 <h3 className='text-title-primary text-7xl font-serif font-bold'>
                     by RATSIMAZOA
                 </h3>
-                <p className='text-title-secondary text-md pr-3 pl-[58vw] text-white-var'>
+                <p className='text-title-secondary text-md pr-3 pl-[58vw] text-white-var font-serif tracking-wider'>
                     a small personal project created by a lovely girl who wants to share her passion and her art
                 </p>
             </div>
