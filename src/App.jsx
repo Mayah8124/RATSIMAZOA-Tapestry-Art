@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
 import Review from './pages/Review.jsx'
+import Contact from './pages/Contact.jsx'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Product />
       <Review />
+      <Contact />
     </div>
   )
 }
