@@ -4,6 +4,7 @@ import Navbar from './pages/Navbar'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
+import Review from './pages/Review.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Product />
+      <Review />
     </div>
   )
 }
