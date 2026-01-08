@@ -1,6 +1,7 @@
 import { FaPhone, FaFacebook } from "react-icons/fa"
 import { MdLocationOn } from "react-icons/md"
 import { FaRegCopy } from "react-icons/fa";
+import { useState , useRef } from "react";
 
 export default function Contact() {
     const [textToCopy, setTextToCopy] = useState('Some default text to copy');
