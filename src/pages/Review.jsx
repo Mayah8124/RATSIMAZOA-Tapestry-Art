@@ -16,7 +16,7 @@ export default function Review() {
         {customers.map((c) => (
           <div
             key={c.id ?? c.name}
-            className="w-[21vw] h-[48vh] bg-fourth-color rounded-xl rounded-xl shadow-md m-3
+            className="w-[21vw] h-[48vh] bg-fourth-color rounded-xl shadow-md m-3
                        transition-transform duration-200 hover:scale-110"
           >
             <div className="rounded-t-xl bg-third-color p-2 flex justify-center items-center">
