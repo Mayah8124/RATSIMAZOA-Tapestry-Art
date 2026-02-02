@@ -3,18 +3,15 @@ import flower_bag from '../assets/done_art/flower_bag.png'
 import heart_bag from '../assets/done_art/heart_bag.png'
 import the_weeknd from '../assets/done_art/the_weeknd.png'
 
-import cat_with_yarn from '../assets/pictures/cat_with_yarn.png'
-import basket_yarn_ball from '../assets/pictures/basket_yarn_ball.png'
+import { forwardRef } from 'react';
 
-import SlideShow from '../Components/HomeComponents/SlideShow.jsx'
-
-export default function Product() {
+const Product = forwardRef((props, ref) => {
     const images = [
         summer_bag , flower_bag , heart_bag , the_weeknd
     ]
 
     return (
-        <div className='py-5'>
+        <section ref={ref} className="min-h-screen w-full scroll-mt-15">
             <div className='flex flex-col gap-2 text-center font-serif font-stretch-expanded py-5'>
                 <h3 className='text-title-primary text-7xl font-bold'>
                     Our Products
@@ -35,6 +32,8 @@ export default function Product() {
                                                             transition-transform duration-200 hover:scale-110' />
                 </div>
             </div>
-        </div>
+        </section>  
     )
-}
+});
+
+export default Product;
