@@ -26,15 +26,15 @@ export default function Home() {
 
             {/* HERO / HOME */}
             <section ref={homeRef} className="min-h-screen">
-                <div className={`w-full h-[95vh] bg-[url('/images/bg1.png')] bg-cover bg-center`}>
-                    <div className='absolute flex flex-col gap-4 top-1/5 right-0 pr-4 text-right'>
-                        <h1 className="text-title-primary text-4xl font-serif font-bold">
+                <div className={`w-full h-[95vh] bg-[url('/images/bg1.png')] bg-cover bg-[95vh]`}>
+                    <div className='absolute flex flex-col gap-4 top-1/5 left-0 pl-4 text-left'>
+                        <h1 className="title-primary text-4xl font-serif font-bold">
                             Tapestry Art and Crochet 
                         </h1>
-                        <h3 className='text-title-primary text-7xl font-serif font-bold'>
+                        <h3 className='title-primary text-7xl font-serif font-bold'>
                             by RATSIMAZOA
                         </h3>
-                        <p className='text-title-secondary text-md pr-3 pl-[58vw] text-white-var font-serif tracking-wider'>
+                        <p className='text-primary text-md pl-3 pr-[58vw] font-serif tracking-wider'>
                             a small personal project created by a lovely girl who wants to share her passion and her art
                         </p>
                     </div>

@@ -1,4 +1,4 @@
-import creator from '../assets/creator.jpeg'
+import creator from '../assets/creator.png'
 import { forwardRef } from 'react';
 
 const About = forwardRef((props, ref) => {
