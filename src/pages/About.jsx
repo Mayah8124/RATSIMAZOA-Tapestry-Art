@@ -21,7 +21,7 @@ const About = forwardRef((props, ref) => {
                         </p>
                     </div>
                 </div>
-                <section className="bg-second-color w-[40vw] pt-5 flex flex-col items-center text-center rounded-tr-[40rem] rounded-bl-[40rem] rounded-br-[80rem] rounded-tl-[80rem]">
+                <section className="bg-pink-300 w-[40vw] pt-5 flex flex-col items-center text-center rounded-tr-[40rem] rounded-bl-[40rem] rounded-br-[80rem] rounded-tl-[80rem]">
                     <img src={creator} alt="Creator" className='h-[70vh] rounded-4xl object-cover' />
                 </section>
             </div>

@@ -19,7 +19,7 @@ const Product = forwardRef((props, ref) => {
         theWeeknd,
     ];
 
-  const [emblaRef] = useEmblaCarousel(
+    const [emblaRef] = useEmblaCarousel(
         {
             loop: true,
             align: "center",
