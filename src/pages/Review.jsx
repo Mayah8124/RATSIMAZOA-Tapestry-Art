@@ -4,7 +4,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from 'embla-carousel-auto-scroll'
 
 import { customers } from "../data/customers"
-import { useAutoScroll } from "../components/CarouselComponent/AutoScroll";
 
 const Review = forwardRef((props, ref) => {
 
@@ -29,10 +28,10 @@ const Review = forwardRef((props, ref) => {
         <section ref={ref} className="w-full scroll-mt-15">
             <div className="py-10">
                 <div className="flex flex-col gap-2 text-center font-serif font-stretch-expanded">
-                    <h1 className="text-title-primary text-7xl font-bold">
+                    <h1 className="title-primary text-7xl font-bold">
                         Reviews
                     </h1>
-                    <p className="text-white-var">
+                    <p className="text-primary">
                         More the client are satisfied more I am proud of myself
                     </p>
                 </div>
