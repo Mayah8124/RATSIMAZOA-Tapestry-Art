@@ -18,8 +18,8 @@ const Contact = forwardRef((props, ref) => {
                     <div className='flex flex-col text-center md:text-left'>
                         <h2 className="text-2xl font-bold mb-2">Tapestry Art</h2>
                             <p className="text-center md:text-left opacity-80 leading-relaxed">
-                                Art de la tapisserie fait à la main.
-                                Chaque création est unique, tissée avec passion et dévouement pour sublimer votre intérieur.
+                                The art of hand-woven tapestry.
+                                Each piece is unique, woven with passion and dedication to enhance your home.
                             </p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const Contact = forwardRef((props, ref) => {
                 {/* Nous trouver */}
                 <div className="flex flex-col items-center md:items-start">
                     <h3 className="text-xl font-bold mb-4 uppercase tracking-widest border-b-2 border-title-secondary pb-1">
-                        Nous trouver
+                        Location
                     </h3>
                     <div className="flex items-start gap-3 mt-2">
                         <MdLocationOn className="text-title-secondary text-2xl shrink-0 mt-1" />
@@ -62,7 +62,7 @@ const Contact = forwardRef((props, ref) => {
                 {/* Réseaux sociaux */}
                 <div className="flex flex-col items-center md:items-start">
                     <h3 className="text-xl font-bold mb-4 uppercase tracking-widest border-b-2 border-title-secondary pb-1">
-                        Réseaux sociaux
+                        Social media
                     </h3>
                     <a
                         href="https://www.facebook.com/profile.php?id=61578605880168&locale=fr_FR"
@@ -91,7 +91,7 @@ const Contact = forwardRef((props, ref) => {
                 <hr className="border-t border-title-primary opacity-20" />
                 <div className="py-6 text-center text-sm opacity-70 flex flex-col md:flex-row justify-center items-center gap-2">
                     <p>&copy; {new Date().getFullYear()} Tapestry Art By RATSIMAZOA.</p>
-                    <p>Tous droits réservés.</p>
+                    <p>All rights reserved.</p>
                 </div>
             </div>
         </section>
