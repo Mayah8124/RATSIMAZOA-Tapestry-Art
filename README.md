@@ -1,12 +1,33 @@
-# React + Vite
+### 🧶 Product & Review Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📌 Description
+This project is a modern and responsive web interface designed to showcase products and customer reviews.
+It features smooth animations, interactive carousels, and a clean UI to provide an engaging user experience.
 
-Currently, two official plugins are available:
+The goal of this project is to combine performance, aesthetics, and usability by leveraging powerful frontend technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ✨ Features
+- Interactive Product Carousel
+- Auto-scrolling Customer Reviews Carousel
+- Fully Responsive Design (mobile, tablet, desktop)
+- Smooth animations and transitions
+- Clean and modern user interfac
 
-## Expanding the ESLint configuration
+# 🛠️ Technologies Used
+⚛️ ReactJS – Component-based frontend framework
+🎨 TailwindCSS – Utility-first CSS framework
+🎠 Embla Carousel – Lightweight carousel library
+🔄 Embla AutoScroll – Automatic scrolling functionality
+🎞️ Framer Motion – Animation library
+⭐ React Icons – Icon library
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🚀 Installation & Usage
+1. 📥 Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2. 📦 Install dependencies
+npm install
+3. ▶️ Run the project
+npm start 
+    or 
+npm run dev
