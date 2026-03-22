@@ -22,12 +22,11 @@ The goal of this project is to combine performance, aesthetics, and usability by
 ⭐ React Icons – Icon library
 
 ## 🚀 Installation & Usage
-1. 📥 Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2. 📦 Install dependencies
+1. 📥git clone https://github.com/Mayah8124/RATSIMAZOA-Tapestry-Art
+2. 📁 cd RATSIMAZOA-Tapestry-Art
+3. 📦 Install dependencies
 npm install
-3. ▶️ Run the project
+4. ▶️ Run the project
 npm start 
     or 
 npm run dev
