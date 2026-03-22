@@ -46,8 +46,8 @@ const Product = forwardRef((props, ref) => {
     }, [emblaApi, onSelect]);
 
     return (
-        <section ref={ref} className="min-h-screen w-full scroll-mt-20 relative overflow-hidden py-16">
-            <style>{`
+            <section ref={ref} className="min-h-screen w-full scroll-mt-20 relative overflow-hidden py-10 md:py-16 px-3 sm:px-6">
+                <style>{`
                 @keyframes fadeInUp {
                     from { opacity: 0; transform: translateY(30px); }
                     to { opacity: 1; transform: translateY(0); }
@@ -59,15 +59,15 @@ const Product = forwardRef((props, ref) => {
             `}</style>
 
             {/* Background Decorations */}
-            <div className="border-pink-300 border-[12px] w-[20vw] h-[40vh] bg-pink-200/50 rounded-br-full absolute top-0 left-0 -z-10 opacity-60 mix-blend-multiply"></div>
-            <div className="border-pink-300 border-[12px] w-[20vw] h-[40vh] bg-pink-200/50 rounded-tl-full absolute bottom-0 right-0 -z-10 opacity-60 mix-blend-multiply"></div>
+            <div className="border-pink-300 border-[12px] w-[40vw] h-[25vh] md:w-[20vw] md:h-[40vh] bg-pink-200/50 rounded-br-full absolute top-0 left-0 -z-10 opacity-60 mix-blend-multiply"></div>
+            <div className="border-pink-300 border-[12px] w-[40vw] h-[25vh] md:w-[20vw] md:h-[40vh] bg-pink-200/50 rounded-tl-full absolute bottom-0 right-0 -z-10 opacity-60 mix-blend-multiply"></div>
 
             {/* Animated Stars */}
             <div className="absolute top-10 right-[15%] text-yellow-400 opacity-70 animate-[spin_10s_linear_infinite] pointer-events-none -z-10">
-                <GiBeveledStar className="text-[8rem]" />
+                <GiBeveledStar className="text-[5rem] md:text-[10rem]" />
             </div>
             <div className="absolute bottom-20 left-[10%] text-yellow-400 opacity-70 animate-[pulse_3s_ease-in-out_infinite] pointer-events-none -z-10">
-                <GiBeveledStar className="text-[10rem]" />
+                <GiBeveledStar className="text-[5rem] md:text-[10rem]" />
             </div>
             <div className="absolute top-1/2 left-[80%] text-pink-400 opacity-50 animate-bounce pointer-events-none -z-10">
                 <WiStars className="text-[6rem]" />
@@ -78,18 +78,18 @@ const Product = forwardRef((props, ref) => {
                 className="text-center font-serif mb-12 opacity-0"
                 style={{ animation: "fadeInUp 1s ease-out forwards" }}
             >
-                <h3 className="text-5xl md:text-7xl font-bold title-primary inline-flex items-center gap-4 justify-center">
+                <h3 className="text-3xl sm:text-4xl md:text-7xl font-bold title-primary inline-flex items-center gap-4 justify-center">
                     <WiStars className="text-yellow-400" />
                     Our Products
                     <WiStars className="text-yellow-400" />
                 </h3>
-                <p className="text-primary mt-4 text-xl italic opacity-80">
+                <p className="text-primary mt-4 text-base sm:text-lg md:text-xl italic opacity-80 px-2">
                     Small project for a big dream 
                 </p>
             </div>
 
             {/* === EMBLA CAROUSEL === */}
-            <div className="embla max-w-4xl mx-auto px-4 relative">
+            <div className="embla max-w-4xl mx-auto px-2 sm:px-4 relative">
                 <div className="embla__viewport overflow-hidden py-10" ref={emblaRef}>
                     <div className="embla__container flex items-center">
                         {products.map((product, index) => {
@@ -97,7 +97,11 @@ const Product = forwardRef((props, ref) => {
                             return (
                                 <div
                                     key={product.id}
-                                    className="embla__slide flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_40%] lg:flex-[0_0_33.333%] flex flex-col items-center justify-center px-4 transition-all duration-700 ease-out"
+                                    className="
+                                        embla__slide 
+                                        flex-[0_0_90%] sm:flex-[0_0_70%] md:flex-[0_0_45%] lg:flex-[0_0_33.333%] 
+                                        flex flex-col items-center justify-center px-4 
+                                        transition-all duration-700 ease-out"
                                 >
                                     <div
                                         className={`
@@ -119,7 +123,7 @@ const Product = forwardRef((props, ref) => {
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-[50vh] w-full object-cover rounded-xl"
+                                                className="h-[40vh] sm:h-[45vh] md:h-[50vh] w-full object-cover rounded-xl"
                                             />
                                         </div>
 
@@ -127,7 +131,8 @@ const Product = forwardRef((props, ref) => {
                                         <div
                                             className={`
                                                 absolute -bottom-6 left-1/2 -translate-x-1/2
-                                                bg-white/90 backdrop-blur-sm px-6 py-2
+                                                bg-white/90 backdrop-blur-sm 
+                                                px-3 sm:px-6 py-1 sm:py-2 text-xs sm:text-sm
                                                 rounded-full shadow-lg border-2 border-pink-200
                                                 transition-all duration-500
                                                 flex items-center gap-2 whitespace-nowrap
@@ -148,7 +153,7 @@ const Product = forwardRef((props, ref) => {
                 </div>
 
                 {/* Navigation Dots */}
-                <div className="flex justify-center gap-3 mt-12">
+                <div className="flex justify-center gap-3 mt-8 md:mt-12">
                     {products.map((_, index) => (
                         <button
                             key={index}
@@ -156,7 +161,7 @@ const Product = forwardRef((props, ref) => {
                                 h-3 rounded-full transition-all duration-500 ease-out
                                 ${index === selectedIndex
                                     ? "w-10 bg-title-primary"
-                                    : "w-3 bg-pink-200 hover:bg-pink-300"}
+                                    : "w-3 bg-pink-300 hover:bg-pink-400"}
                             `}
                             onClick={() => emblaApi && emblaApi.scrollTo(index)}
                             aria-label={`Go to slide ${index + 1}`}
