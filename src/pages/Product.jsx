@@ -61,7 +61,7 @@ const Product = forwardRef((props, ref) => {
     return (
         <motion.section
             ref={ref}
-            className="min-h-screen w-full scroll-mt-20 relative overflow-hidden py-10 md:py-16 px-3 sm:px-6"
+            className="min-h-screen w-full scroll-mt-20 relative overflow-hidden py-10 md:py-5 px-3 sm:px-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -76,54 +76,12 @@ const Product = forwardRef((props, ref) => {
                     0% { transform: translateX(-150%) skewX(-15deg); }
                     100% { transform: translateX(150%) skewX(-15deg); }
                 }
-            `}</style>
-
-            {/* Background Decorations */}
-            <motion.div
-                className="border-pink-300 border-[12px] w-[40vw] h-[25vh] md:w-[20vw] md:h-[40vh] bg-pink-200/50 rounded-br-full absolute top-0 left-0 -z-10 opacity-60 mix-blend-multiply"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 0.6, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-            />
-            <motion.div
-                className="border-pink-300 border-[12px] w-[40vw] h-[25vh] md:w-[20vw] md:h-[40vh] bg-pink-200/50 rounded-tl-full absolute bottom-0 right-0 -z-10 opacity-60 mix-blend-multiply"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 0.6, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0.2 }}
-            />
-
-            {/* Animated Stars */}
-            <motion.div
-                className="absolute top-10 right-[15%] text-yellow-400 animate-[spin_10s_linear_infinite] pointer-events-none -z-10"
-                initial={{ opacity: 0, rotate: -180 }}
-                whileInView={{ opacity: 0.7, rotate: 0 }}
-                transition={{ duration: 1.5 }}
-            >
-                <GiBeveledStar className="text-[5rem] md:text-[10rem]" />
-            </motion.div>
-            <motion.div
-                className="absolute bottom-20 left-[10%] text-yellow-400 animate-[pulse_3s_ease-in-out_infinite] pointer-events-none -z-10"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 0.7, scale: 1 }}
-                transition={{ duration: 1.5 }}
-            >
-                <GiBeveledStar className="text-[5rem] md:text-[10rem]" />
-            </motion.div>
-            <motion.div
-                className="absolute top-1/2 left-[80%] text-pink-400 opacity-50 animate-bounce pointer-events-none -z-10"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 0.5, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.5, delay: 0.3 }}
-            >
-                <WiStars className="text-[6rem]" />
-            </motion.div>
+            `}
+            </style>
 
             {/* Title Section */}
             <motion.div
-                className="text-center font-serif mb-12 opacity-0"
+                className="text-center font-serif mb-12 opacity-0 "
                 style={{ animation: "fadeInUp 1s ease-out forwards" }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -132,6 +90,7 @@ const Product = forwardRef((props, ref) => {
             >
                 <h3 className="text-3xl sm:text-4xl md:text-7xl font-bold title-primary inline-flex items-center gap-4 justify-center">
                     <motion.div
+                        className="text-yellow-400 animate-[pulse_3s_ease-in-out_infinite] pointer-events-none"
                         initial={{ opacity: 0, rotate: -180 }}
                         whileInView={{ opacity: 1, rotate: 0 }}
                         viewport={{ once: true }}
