@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png';
-import { FaPhone, FaFacebook } from "react-icons/fa";
+import { FaPhone, FaFacebook,FaInstagram } from "react-icons/fa";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { forwardRef } from "react";
 
@@ -49,11 +49,11 @@ const Contact = forwardRef((props, ref) => {
                         <span className="opacity-90 group-hover:opacity-100">+261 34 61 716 62</span>
                     </a>
                     <a
-                        href="mailto:contact@tapestryart.mg"
+                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DXDwSWwxqnzBCGhtZSHrTQFvNSQVnNBPcxZHJpTXKCdVPJtKxdKBpHMfRXWzqHmnZBdrHSbGjqGgzdfnFsDsFvcsPDdtwLPNbGbfSxSkTvdggGqhgqKjCzvB"
                         className="flex items-center gap-3 mt-4 hover:text-title-secondary transition-colors duration-300 group"
                     >
                         <MdEmail className="text-title-secondary text-xl group-hover:scale-110 transition-transform" />
-                        <span className="opacity-90 group-hover:opacity-100">contact@tapestryart.mg</span>
+                        <span className="opacity-90 group-hover:opacity-100">ratsimazoanyantsa@gmail.com</span>
                     </a>
                 </div>
 
@@ -63,13 +63,22 @@ const Contact = forwardRef((props, ref) => {
                         Réseaux sociaux
                     </h3>
                     <a
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/profile.php?id=61578605880168&locale=fr_FR"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 mt-2 hover:text-title-secondary transition-colors duration-300 group"
                     >
                         <FaFacebook className="text-title-secondary text-xl group-hover:scale-110 transition-transform" />
                         <span className="opacity-90 group-hover:opacity-100">Tapestry Art By RATSIMAZOA</span>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/ratsima____zoa/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 mt-2 hover:text-title-secondary transition-colors duration-300 group"
+                    >
+                        <FaInstagram className="text-title-secondary text-xl group-hover:scale-110 transition-transform" />
+                        <span className="opacity-90 group-hover:opacity-100">ratsima____zoa</span>
                     </a>
                 </div>
 
