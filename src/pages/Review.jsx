@@ -1,8 +1,6 @@
 import { forwardRef } from "react"
-
-import useEmblaCarousel from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react"
 import AutoScroll from 'embla-carousel-auto-scroll'
-
 import { customers } from "../data/customers"
 
 const Review = forwardRef((props, ref) => {
@@ -15,39 +13,42 @@ const Review = forwardRef((props, ref) => {
             dragFree: false,
         },
         [
-        AutoScroll({
-            playOnInit: true,
-            speed: 1.2,
-            stopOnInteraction: false,
-            stopOnMouseEnter: true,
-        })
+            AutoScroll({
+                playOnInit: true,
+                speed: 1.2,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+            })
         ]
     )
 
     return (
         <section ref={ref} className="w-full scroll-mt-15">
-            <div className="py-10">
-                <div className="flex flex-col gap-2 text-center font-serif font-stretch-expanded">
-                    <h1 className="title-primary text-7xl font-bold">
+            <div className="py-10 px-4 sm:px-8 lg:px-16">
+                <div className="flex flex-col gap-4 sm:gap-6 text-center font-serif font-stretch-expanded">
+                    <h1 className="title-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                         Reviews
                     </h1>
-                    <p className="text-primary">
+                    <p className="text-primary text-base sm:text-lg md:text-xl">
                         More the client are satisfied more I am proud of myself
                     </p>
                 </div>
 
                 <div className="review">
                     <div className="review__viewport" ref={emblaRef}>
-                        <div className="review__container my-10">
+                        <div className="review__container my-5">
                             {customers.map((c) => (
                                 <div
                                     key={c.id ?? c.name}
                                     className="
                                         review__slide
+                                        sm:review__slide__responsive
+                                        lg:review__slide
                                         bg-third-color
                                         rounded-xl
-                                        shadow-md p-2
+                                        shadow-md p-4
                                         hover:scale-105
+                                        flex-shrink-0
                                     "
                                 >
                                     <div className="flex flex-col">
@@ -55,19 +56,19 @@ const Review = forwardRef((props, ref) => {
                                             <img
                                                 src={c.picture}
                                                 alt={c.name}
-                                                className="h-[20vh] object-cover rounded-full"
+                                                className="h-[25vh] sm:h-[30vh] lg:h-[20vh] object-cover rounded-full w-32 sm:w-40 lg:w-32"
                                             />
                                         </div>
 
                                         <div className="
                                             flex flex-col gap-2
                                             font-serif text-secondary
-                                            text-center p-2
+                                            text-center p-4
                                         ">
-                                            <h1 className="text-xl font-semibold">
+                                            <h1 className="text-lg sm:text-xl font-semibold">
                                                 {c.name}
                                             </h1>
-                                            <p>"{c.review}"</p>
+                                            <p className="text-sm sm:text-base lg:text-lg">"{c.review}"</p>
                                         </div>
                                     </div>
                                 </div>
@@ -75,54 +76,6 @@ const Review = forwardRef((props, ref) => {
                         </div>
                     </div>
                 </div>
-
-                {/* 
-                <div className="mt-10 px-5 grid grid-cols-4 justify-around">
-                    {customers.map((c) => (
-                        <div
-                            key={c.id ?? c.name}
-                            className="w-[21vw] h-[48vh] bg-fourth-color rounded-xl shadow-md m-3
-                            transition-transform duration-200 hover:scale-110"
-                        >
-                            <div className="rounded-t-xl bg-third-color p-2 flex justify-center items-center">
-                                <img
-                                    src={c.picture}
-                                    alt="customer_picture"
-                                    className="w-[50%] object-cover rounded-full"
-                                />
-                            </div>
-
-                            <div className="bg-fourth-color flex flex-col gap-2 font-serif font-stretch-condensed text-center p-4 rounded-b-xl">
-                                <h1 className="text-xl text-title-secondary font-semibold">
-                                    {c.name}
-                                </h1>
-                                    <p>"{c.review}"</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                const toggleAutoScroll = useCallback(() => {
-                    const autoScroll = reviewApi?.plugins()?.autoScroll
-                        if (!autoScroll) return
-
-                        const playOrStop = autoScroll.isPlaying()
-                        ? autoScroll.stop
-                        : autoScroll.play
-                        playOrStop()
-                    }, [emblaApi])
-
-                    useEffect(() => {
-                        const autoScroll = emblaApi?.plugins()?.autoScroll
-                        if (!autoScroll) return
-
-                        setAutoScrollIsPlaying(autoScroll.isPlaying())
-                        emblaApi
-                        .on('autoscroll:play', () => setAutoScrollIsPlaying(true))
-                        .on('autoscroll:stop', () => setAutoScrollIsPlaying(false))
-                        .on('reinit', () => setAutoScrollIsPlaying(autoScroll.isPlaying()))
-                    }, [emblaApi])
-                 */}
             </div>
         </section>
     )
