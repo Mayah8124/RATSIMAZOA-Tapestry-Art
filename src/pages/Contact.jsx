@@ -6,7 +6,7 @@ import { forwardRef } from "react";
 const Contact = forwardRef((props, ref) => {
     return (
         <section ref={ref} className="w-full pt-10 px-4 bg-fourth-color title-primary font-serif">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-10 py-10">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-5 py-10">
 
                 {/* Brand / Logo Section */}
                 <div className="flex flex-col items-center md:items-start max-w-sm">
@@ -15,11 +15,13 @@ const Contact = forwardRef((props, ref) => {
                         alt="Tapestry Logo"
                         className="h-32 w-auto mb-4 object-contain drop-shadow-md"
                     />
-                    <h2 className="text-2xl font-bold mb-2">Tapestry Art</h2>
-                    <p className="text-center md:text-left opacity-80 leading-relaxed">
-                        Art de la tapisserie fait à la main.
-                        Chaque création est unique, tissée avec passion et dévouement pour sublimer votre intérieur.
-                    </p>
+                    <div className='flex flex-col text-center md:text-left'>
+                        <h2 className="text-2xl font-bold mb-2">Tapestry Art</h2>
+                            <p className="text-center md:text-left opacity-80 leading-relaxed">
+                                Art de la tapisserie fait à la main.
+                                Chaque création est unique, tissée avec passion et dévouement pour sublimer votre intérieur.
+                            </p>
+                    </div>
                 </div>
 
                 {/* Nous trouver */}
