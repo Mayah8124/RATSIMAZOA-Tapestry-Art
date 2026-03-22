@@ -50,19 +50,24 @@ export default function Navbar({ refs }) {
                         <button
                             key={key}
                             onClick={() => scrollTo(key)}
-                            className={`relative pb-1 transition-colors duration-300 hover:title-primary group ${
-                                active === key ? 'title-primary font-bold' : ''
+                            className={`relative pb-1 transition-colors duration-300 group ${
+                                active === key 
+                                    ? 'title-primary font-bold' 
+                                    : 'title-secondary font-normal'
                             }`}
                         >
                             {label}
                             <span
                                 className={`absolute bottom-0 left-0 h-[2px] bg-third-color rounded-full transition-all duration-300 ${
-                                    active === key ? 'w-full' : 'w-0 group-hover:w-full'
+                                    active === key 
+                                        ? 'w-full' 
+                                        : 'w-0 group-hover:w-full'
                                 }`}
                             />
                         </button>
                     ))}
                 </nav>
+
 
                 {/* Mobile Hamburger */}
                 <button
