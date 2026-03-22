@@ -8,7 +8,7 @@ const Contact = forwardRef((props, ref) => {
         <section ref={ref} className="w-full pt-10 px-4 bg-fourth-color title-primary font-serif">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-5 py-10">
 
-                {/* Brand / Logo Section */}
+                {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start max-w-sm">
                     <img
                         src={logo}

@@ -3,7 +3,6 @@ import { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 
 const About = forwardRef((props, ref) => {
-    // Animation variants
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { 

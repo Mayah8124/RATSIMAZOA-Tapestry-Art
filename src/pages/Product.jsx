@@ -2,7 +2,6 @@ import { forwardRef, useState, useEffect, useCallback } from "react";
 import { motion } from 'framer-motion';
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { GiBeveledStar } from "react-icons/gi";
 import { WiStars } from "react-icons/wi";
 
 import ProductCarousel from "../components/ProductComponents/ProductCarousel";
@@ -48,7 +47,6 @@ const Product = forwardRef((props, ref) => {
         return () => emblaApi.off("select", onSelect);
     }, [emblaApi, onSelect]);
 
-    // Animation variants
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { 
@@ -119,7 +117,6 @@ const Product = forwardRef((props, ref) => {
                 </motion.p>
             </motion.div>
 
-            {/* === EMBLA CAROUSEL === */}
             <ProductCarousel
                 emblaRef={emblaRef}
                 emblaApi={emblaApi}
