@@ -82,7 +82,7 @@ const About = forwardRef((props, ref) => {
                     <motion.img 
                         src={creator} 
                         alt="Creator" 
-                        className='h-[50vh] sm:h-[60vh] lg:h-[50vh] w-auto max-w-full rounded-4xl object-cover'
+                        className='h-[50vh] sm:h-[60vh] lg:h-[70vh] w-auto max-w-full rounded-4xl object-cover'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
