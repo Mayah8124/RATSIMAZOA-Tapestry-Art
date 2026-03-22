@@ -26,19 +26,20 @@ export default function Home() {
 
             {/* HERO / HOME */}
             <section ref={homeRef} className="min-h-screen">
-                <div className={`w-full h-[95vh] bg-[url('/images/bg1.png')] bg-cover bg-[95vh]`}>
-                    <div className='absolute flex flex-col gap-4 top-1/5 left-0 pl-4 text-left'>
-                        <h1 className="title-primary text-4xl font-serif font-bold">
-                            Tapestry Art and Crochet 
+                <div className="relative w-full h-[95vh] bg-[url('/images/bg2.png')] bg-cover bg-center">
+                    <div className="absolute inset-0 bg-initial/40" /> 
+                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                        <h1 className="title-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-2">
+                            Tapestry Art and Crochet
                         </h1>
-                        <h3 className='title-primary text-7xl font-serif font-bold'>
+                        <h3 className="title-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-4">
                             by RATSIMAZOA
                         </h3>
-                        <p className='text-primary text-md pl-3 pr-[58vw] font-serif tracking-wider'>
+                        <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl px-4 font-serif tracking-wider">
                             a small personal project created by a lovely girl who wants to share her passion and her art
                         </p>
                     </div>
-                </div>            
+                </div>
             </section>
 
             <About ref={aboutRef} />
