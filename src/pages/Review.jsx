@@ -2,7 +2,6 @@ import { forwardRef } from "react"
 import { motion } from 'framer-motion';
 import useEmblaCarousel from "embla-carousel-react"
 import AutoScroll from 'embla-carousel-auto-scroll'
-import { customers } from "../data/customers"
 import ReviewCarousel from "../components/ReviewComponents/ReviewCarousel"
 
 const Review = forwardRef((props, ref) => {
@@ -24,7 +23,6 @@ const Review = forwardRef((props, ref) => {
         ]
     )
 
-    // Animation variants
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { 

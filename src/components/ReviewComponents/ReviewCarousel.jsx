@@ -10,8 +10,6 @@ const ReviewCarousel = ({ emblaRef }) => {
                             key={c.id ?? c.name}
                             className="
                                 review__slide
-                                sm:review__slide__responsive
-                                lg:review__slide
                                 bg-third-color
                                 rounded-xl
                                 shadow-md p-4
@@ -19,12 +17,19 @@ const ReviewCarousel = ({ emblaRef }) => {
                                 flex-shrink-0
                             "
                         >
-                            <div className="flex flex-col">
+                            <div className="flex flex-row sm:flex-col gap-2">
                                 <div className="flex justify-center">
                                     <img
                                         src={c.picture}
                                         alt={c.name}
-                                        className="h-[25vh] sm:h-[30vh] lg:h-[20vh] object-cover rounded-full w-32 sm:w-40 lg:w-32"
+                                        className="
+                                            w-80 h-40
+                                            sm:w-45 sm:h-45
+                                            lg:w-32 lg:h-32
+                                            object-cover
+                                            rounded-2xl
+                                            sm:rounded-full
+                                        "
                                     />
                                 </div>
 
