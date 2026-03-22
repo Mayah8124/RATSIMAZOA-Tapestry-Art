@@ -1,19 +1,19 @@
-### 🧶 Product & Review Showcase
+# 🧶 Tapestry Art By RATSIMAZOA 
 
-# 📌 Description
+## 📌 Description
 This project is a modern and responsive web interface designed to showcase products and customer reviews.
 It features smooth animations, interactive carousels, and a clean UI to provide an engaging user experience.
 
 The goal of this project is to combine performance, aesthetics, and usability by leveraging powerful frontend technologies.
 
-# ✨ Features
+## ✨ Features
 - Interactive Product Carousel
 - Auto-scrolling Customer Reviews Carousel
 - Fully Responsive Design (mobile, tablet, desktop)
 - Smooth animations and transitions
 - Clean and modern user interfac
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 ⚛️ ReactJS – Component-based frontend framework
 🎨 TailwindCSS – Utility-first CSS framework
 🎠 Embla Carousel – Lightweight carousel library
@@ -21,7 +21,7 @@ The goal of this project is to combine performance, aesthetics, and usability by
 🎞️ Framer Motion – Animation library
 ⭐ React Icons – Icon library
 
-# 🚀 Installation & Usage
+## 🚀 Installation & Usage
 1. 📥 Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
